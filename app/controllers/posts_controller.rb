@@ -31,7 +31,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    byebug
+    # byebug
     # binding.pry
     @post = Post.find(params[:id])
     # @post.update(params.require(:post))
