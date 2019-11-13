@@ -31,8 +31,11 @@ class PostsController < ApplicationController
   end
 
   def update
+    byebug
+    # binding.pry
     @post = Post.find(params[:id])
-    @post.update(params.require(:post))
+    # @post.update(params.require(:post))
+    @post.update(post_params)
     redirect_to post_path(@post)
   end
 
